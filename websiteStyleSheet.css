@@ -1,0 +1,15 @@
+img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+
+.recipes{
+      text-align:center;
+      padding:35px;
+      border-width:3px;
+      border-spacing:15px 50px;  
+      border-style:groove;
+      font-family:'Permanent Marker', cursive;
+      font-size:30px;
+}
