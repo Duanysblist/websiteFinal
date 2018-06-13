@@ -9,11 +9,51 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<title>Featured Recipes</title>
+
+	<style>
+
+		body{
+			background:url("Images/table.jpg") no-repeat center center fixed;
+			background-size:cover;
+		}
+
+		.recipes{
+			border-width:3px;
+  			border-spacing:15px 50px;  
+    		border-style:groove;
+    		padding:35px;
+    		font-family: 'Handlee', cursive;
+    		font-size:20px;
+    		color:#f5e687;
+		}
+
+	</style>
 
 </head>
 
 <body>
+
+	<div class="container">
+
+	<ul class="nav nav-tabs">
+
+		<li><a href="index.html">Home</a></li>
+
+		<li class="active"><a href="recipes.html"><span class="glyphicon glyphicon-thumbs-up"></span>Featured Recipes</a></li>
+
+		<li><a href="quiz.html"><span class ="glyphicon glyphicon-dashboard"></span>What To Eat Quiz</a></li>
+
+		<li><a href="grocery.html"><span class="glyphicon glyphicon-shopping-cart"></span>Grocery</a></li>
+
+		<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+
+	</ul>
+
 	<div class="recipes">
 		<div class="row">
 			<div class="col-sm-12">
@@ -22,24 +62,31 @@
 		</div>
 	</div>
 
+
+<div class="Recipes">
+
 	<div class="container">
 
 		<div class="row">
 
 			<div class="col-sm-4">
 				<div class="tacos">
+					<a href="#" data-toggle="popover" title="Jerk Steak Tacos" data-content="We really love these <a href='https://www.delish.com/cooking/recipe-ideas/recipes/a52048/jamaican-jerk-steak-tacos-recipe/' title='Jamaican Tacos'>Jamaican Tacos</a> " data-html="true">
 					<img src="Images/tacos.jpg" alt="Jamaican Jerk Tacos">
+				</a>
 				</div>
 			</div>
 
 			<div class="col-sm-4">
 				<div class="chicken">
+					<a href="#" data-toggle="popover" title="Santa Fe Chicken" data-content="Super easy skillet chicken with enough cheese to put you in a coma <a href='https://www.delish.com/cooking/recipe-ideas/recipes/a46562/santa-fe-skillet-chicken-recipe/' title='Santa Fe Chicken'>here</a> " data-html="true">
 					<img src="Images/chicken.jpg">
 				</div>
 			</div>
 
 			<div class="col-sm-4">
 				<div class="pork">
+					<a href="#" data-toggle="popover" title="Pork Chops with Warm Lemon Vinaigrette" data-content="Hearty enough for a dinner and light enough to remember it's summer, this is a porkchop at it's finest: <a href='https://www.delish.com/cooking/recipes/a46311/pork-chops-with-warm-lemon-vinaigrette-recipe/' title='Pork Chops with Warm Lemon Vinaigrette'>delicious</a>" data-html="true">
 					<img src="Images/pork.jpeg">
 				</div>
 			</div>
@@ -52,24 +99,38 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="spaghetti">
+					<a href="#" data-toggle="popover" title="Bucatini with Crispy Salami" data-content="We're HUGE pasta lovers, so having a five minute meal that includes pasta is definitely a plus: <a href='https://www.delish.com/cooking/recipe-ideas/recipes/a47484/bucatini-with-crispy-salami-and-tomatoes-recipe/' title='Bucatini with Crispy Salami and Tomatoes'>Enjoy!</a>" data-html="true">
 					<img src="Images/spaghetti.jpg">
 				</div>
 			</div>
 
 			<div class="col-sm-4">
 				<div class="shrimp">
+					<a href="#" data-toggle="popover" title="Garlicky Shrimp Zucchini Pasta" data-content="In case the last pasta dish scared you, this one is a little lighter. And who doesn't live zucchini pasta? More flavor, no regret! <a href='https://www.delish.com/cooking/recipe-ideas/a19664978/garlicky-shrimp-zucchini-pasta-recipe/' title='Garlicky Shrimp Zucchini Pasta'>Try some!</a>" data-html="true">
 					<img src="Images/shrimp.jpg">
 				</div>
 			</div>
 
 			<div class="col-sm-4">
 				<div class="falafel">
+					<a href="#" data-toggle="popover" title="Homemade Falafel" data-content="I'm not gonna lie, ever since I left Astoria a few years ago, I have really missed Greek/Mediterranean food. So here's a little taste of a neighborhood I once called home <a href='https://www.delish.com/cooking/recipe-ideas/recipes/a54231/easy-homemade-falafel-recipe/' title='Homemade Falafel'>I hope you love it!</a>" data-html="true">
 					<img src="Images/falafel.jpg">
 				</div>
 			</div>
 		</div>
 
 	</div>
+</div>
+
+
+
+	<script>
+		$(document).ready(function() {
+			$('[data-toggle="popover"]').popover({
+				container:'body'
+			});
+		});
+	</script>
 
 
 </body>
