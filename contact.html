@@ -1,11 +1,174 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+	<title>Contact UMM</title>
+
+	<link rel="stylesheet" href="websiteStyleSheet.css">
+
+	<meta charset="utf-8">
+	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+	<style>
+
+	body{
+  background:url("Images/contact.jpg")
+  no-repeat center center fixed;
+
+  background-size:cover;
+
+}
+
+
+	</style>
 
 </head>
 
 <body>
+
+	<div id="title">
+	<h1 style="text-align:center;
+  		font-family: 'Amatic SC', cursive;
+  		font-size:60px;">Contact Us</h1>
+	</div>
+
+	<div class="container">
+
+	<ul class="nav nav-tabs">
+
+		<li><a href="index.html">Home</a></li>
+
+		<li><a href="recipes.html"><span class="glyphicon glyphicon-thumbs-up"></span>Featured Recipes</a></li>
+
+		<li><a href="quiz.html"><span class ="glyphicon glyphicon-dashboard"></span>What To Eat Quiz</a></li>
+
+		<li><a href="grocery.html"><span class="glyphicon glyphicon-shopping-cart"></span>Grocery</a></li>
+
+		<li class="active"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+
+	</ul>
+
+	</div>
+
+	<br/>
+
+	<form action="submit.html" method="POST"><center>
+
+		<div class="info">
+
+		<label for="name" id="name" > Name: </label>
+		<input type="text"  name="name">
+
+		<br/>
+
+		<label for="email" id="email">Email:</label>
+		<input type="text"  name="email">
+		<br/>
+
+		<label for="phone" id="phone">Phone:</label>
+		<input type="text"  name="phone">
+		<br/>
+
+		</div>
+
+		<div class="inquiry">
+		<div class="reason">
+		<label for="reason">Reason for Inquiry:</label>
+		</div>
+		<select id="Reason" name="reason">
+			<option value="default" selected>Praise</option>
+			<option value="recipeQuestions">Recipe Questions</option>
+			<option value="press">Press</option>
+			<option value="other">Other</option>
+		</select><br/>
+
+		</div>
+
+		<div class="addInfo">
+
+		<label for="info" id="addInfo">Additional Information</label>
+		</div>
+
+		<textarea rows="4" cols="50" id="info"></textarea><br/>
+
+		
+
+		<div class="choice">
+
+		<fieldset>
+
+			<legend>Do you like our site?</legend>
+
+			<input type="radio" id="choice1" name="regular" value="yes">
+			<label for="choice1">Yes</label>
+
+			<input type="radio" id="choice2" name="regular" value="no">
+			<label for="choice2">No</label><br/>
+
+		</fieldset>
+
+		</div>
+
+		<div class="options">
+
+		<fieldset>
+
+			<legend>What would you like to see more of?:</legend>
+
+			<input type="checkbox" id="vegan" name="options" value="veganRecipes">
+			<label for="vegan">More Vegan Recipes</label>
+
+			<input type="checkbox" id="desserts" name="options" value="desserts">
+			<label for="desserts">More Desserts</label>
+
+			<input type="checkbox" id="restaurants" name="options" value="moreRestaurants">
+			<label for="restaurants">More Restaurant Suggestions</label>
+
+			<input type="checkbox" id="newsletter" name="options" value="weeklyNewsletter">
+			<label for="newsletter">A Weekly Newsletter</label>
+
+			<input type="checkbox" id="chefs" name="options" value="chefSpotlight">
+			<label for="chefs">A Chef's Spotlight Section</label>
+
+		</fieldset>
+
+		</div>
+
+		<div class="submit">
+
+		<input type="submit" name="submit" value="Send Suggestions">
+
+		</div>
+
+	</center></form>
+
+		<div id="footer" style="text-align:center;">
+	<hr/>
+		
+
+			<div class="row">
+			<div class="col-sm-12">1600 Pennsylvania Avenue NW, Washington, DC 20500</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+			<div class="col-sm-12">(866) 930-6480</div>
+			</div>
+
+		
+
+	</div>
+
+
 
 </body>
 

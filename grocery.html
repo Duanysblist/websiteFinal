@@ -3,9 +3,88 @@
 
 <head>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+	<title>Grocery Stores Near You</title>
+
+	<style>
+
+	.grocery{
+		text-align:center;
+  		font-family: 'Amatic SC', cursive;
+  		font-size:50px;
+  		color:#FF1493;
+  		background:url("Images/grocery.jpg")no-repeat center center fixed;
+  		background-size:cover;
+
+	}
+
+	body{
+		text-align:center;
+		background:url("https://media.giphy.com/media/3o7btUDtnx3gTwIlmo/giphy.gif")no-repeat center center fixed;
+		background-size:cover;
+	}
+
+	.groceryStores{
+  		text-align:center;
+  		font-family: 'Amatic SC', cursive;
+  		font-size:60px;
+  	}
+
+	</style>
+
 </head>
 
 <body>
+
+	<div class ="groceryStores">
+	<p>Grocery Stores Near You</p>
+	</div>
+
+	<div class="container">
+
+	<ul class="nav nav-tabs">
+
+		<li><a href="index.html">Home</a></li>
+
+		<li><a href="recipes.html"><span class="glyphicon glyphicon-thumbs-up"></span>Featured Recipes</a></li>
+
+		<li><a href="quiz.html"><span class ="glyphicon glyphicon-dashboard"></span>What To Eat Quiz</a></li>
+
+		<li class="active"><a href="grocery.html"><span class="glyphicon glyphicon-shopping-cart"></span>Grocery</a></li>
+
+		<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+
+	</ul>
+
+	</div>
+
+	<div class="container">
+	<div class="grocery">
+		<div class="row">
+			<div class="col-sm-12">
+
+	We figured that since we got your mouth watering, you might want to find somehwere that's open right about now to get the ingredients you need. We've saved you the time and set up this map for you to find just what you're looking for. Happy cooking!
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<br/>
+
+	<div class = "map">
+     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=40.7645~-73.98419999999999&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+     </iframe>
+     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=40.7645~-73.98419999999999&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=40.7645~-73.98419999999999&amp;sty=r&amp;lvl=11&amp;rtp=~pos.40.7645_-73.98419999999999____&amp;FORM=MBEDLD">Get Directions</a>
+    </div>
+</div>
 
 </body>
 
