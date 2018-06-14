@@ -9,6 +9,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
+
 	<title>Grocery Stores Near You</title>
 
 	<style>
@@ -34,6 +35,11 @@
   		font-family: 'Amatic SC', cursive;
   		font-size:60px;
   	}
+
+  	.vishnu{
+  		padding-left:250px;
+  	}
+
 
 	</style>
 
@@ -77,13 +83,10 @@
 
 <br/>
 
-	<div class = "map">
-     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=40.7645~-73.98419999999999&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-     </iframe>
-     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
-        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=40.7645~-73.98419999999999&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=40.7645~-73.98419999999999&amp;sty=r&amp;lvl=11&amp;rtp=~pos.40.7645_-73.98419999999999____&amp;FORM=MBEDLD">Get Directions</a>
-    </div>
+<div class="map vishnu">
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="embedgooglemaps.com/">https://embedgooglemaps.com/</a></small></div><div><small><a href="http://promocode.com.ph/takatack/">http://promocode.com.ph/takatack/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(40.71381623123448,-74.00565677634717),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.71381623123448,-74.00565677634717)});infowindow = new google.maps.InfoWindow({content:'<strong>UMM</strong><br>New York, NY<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
 </div>
 
 </body>

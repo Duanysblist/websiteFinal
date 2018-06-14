@@ -1,8 +1,4 @@
-img{
-  width:200px;
-  height:200px;
-  border-radius:50%;
-}
+
 
 .recipes{
       text-align:center;
@@ -26,5 +22,9 @@ img{
   no-repeat center center fixed;
 
   background-size:cover;
+}
+
+.description{
+  font-family: 'Handlee', cursive;
 }
 
